@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	background-color: #e2ffd9;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff987;
+	font-size: 14px;
+}
+.desk {
+	width: 80vh;
+	margin: 20px auto 0;
+	background-color: #AA5500;
+	position: relative;
+	height: 80vh;
+	padding: 15px;
+	box-shadow: 5px 5px 0 #666;
+}
+.field {
+	border:2px solid #572117;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-color: #ffed36;
+}
+.field :nth-child(n+1):nth-child(-n+4),
+.field :nth-child(n+9):nth-child(-n+12),
+.field :nth-child(n+17):nth-child(-n+20),
+.field :nth-child(n+25):nth-child(-n+28) {
+	background-color: #AA5500;
+	margin-left: 12.5%;
+}
+.field :nth-child(n+5):nth-child(-n+8),
+.field :nth-child(n+13):nth-child(-n+16),
+.field :nth-child(n+21):nth-child(-n+24),
+.field :nth-child(n+29):nth-child(-n+32) {
+	background-color: #AA5500;
+	margin-right: 12.5%;
+}
+.field div {
+	width: 12.5%;
+	height: 12.5%;
+	position: absolute;
+}
+.field :nth-child(n+1):nth-child(-n+12):after {
+	content:'';
+	position: absolute;
+	width: 82%;
+	height: 82%;
+	border-radius: 50%;
+	margin:auto;
+	background-color: #3a160f;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	box-shadow: 2px 2px 0 rgba(71, 71, 71, 0.41);
+}
+.field :nth-child(n+21):nth-child(-n+32):after {
+	content:'';
+	position: absolute;
+	width: 82%;
+	height: 82%;
+	border-radius: 50%;
+	margin:auto;
+	background-color: #fff987;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	box-shadow: 2px 2px 0 rgba(71, 71, 71, 0.41);
+}
+.field :nth-child(n+1):nth-child(-n+4) {
+	top:0;
+}
+.field :nth-child(4n+1) {
+	left:0;
+}
+.field :nth-child(4n+2) {
+	left:25%;
+}
+.field :nth-child(4n+3) {
+	left:50%;
+}
+.field :nth-child(4n+4) {
+	left:75%;
+}
+.field :nth-child(n+5):nth-child(-n+8) {
+	top:12.5%;
+}
+.field :nth-child(n+9):nth-child(-n+12) {
+	top:25%;
+}
+.field :nth-child(n+13):nth-child(-n+16) {
+	top:37.5%;
+}
+.field :nth-child(n+17):nth-child(-n+20) {
+	top:50%;
+}
+.field :nth-child(n+21):nth-child(-n+24) {
+	top:62.5%;
+}
+.field :nth-child(n+25):nth-child(-n+28) {
+	top:75%;
+}
+.field :nth-child(n+29):nth-child(-n+32) {
+	top:87.5%;
+}
